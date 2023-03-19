@@ -12,14 +12,36 @@
   src: url("../fonts/ptsans-700.woff2") format(.woff2);
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color;
 }
-
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+.main-navigation {
+width: 507px;
+}
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+}
 .page-header {
   color: #000000;
   background: #FFFFFF;
@@ -67,17 +89,17 @@ body {
 .navigation-item-button {
   text-decoration: none;
 }
-.hero {
-  background-image: url(../images/welcome-background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-color: #FFFFFF;
-}
 .main-index {
   color: #000000;
   background: #FFFFFF;
 }
-
+.main-container {
+  flex-grow: 1;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 h2 {
   font-weight: 700;
   font-size: 30px;
@@ -86,8 +108,18 @@ h2 {
   text-transform: uppercase;
   color: #000000;
 }
+.description {
+  
+}
 .advantages-list {
+  display: inline-block;
+  justify-content: baseline;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.advantages-item {
+  width: 400px;
 }
 .advantages-title {
   color: #000000;
@@ -121,11 +153,18 @@ h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.item-container {
+  display: flex;
+}
 .advantages-decription-white {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   text-shadow: none;
   text-transform: none;
+}
+.infrastructure {
+  display: block;
+  margin: 0 auto;
 }
 .infrastructure-title {
   color: #000000;
@@ -166,6 +205,10 @@ text-transform: uppercase;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+}
+.newsletter-catalog, .footer-title-catalog, .footer-description-catalog{
+  background: #FFFFFF;
+  color: #000000;
 }
 .newsletter-button{
   background: #82B3D3;
@@ -289,4 +332,14 @@ text-decoration: none;
 .pagination-current {
   background: #F2F2F2;
   color: #000000;
+}
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-contacts-container{
+  display: flex;
+  justify-content: space-between;
 }
